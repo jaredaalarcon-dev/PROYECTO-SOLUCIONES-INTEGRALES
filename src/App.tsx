@@ -1,11 +1,7 @@
 import './App.css';
 import './index.css';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SolucionesIntegralesJBSection from './components/SolucionesIntegralesJBSection';
 
+import SolucionesIntegralesJBSection from './components/SolucionesIntegralesJBSection';
 
 function App() {
   return (

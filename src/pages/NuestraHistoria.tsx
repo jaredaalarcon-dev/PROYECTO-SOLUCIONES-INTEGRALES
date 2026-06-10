@@ -65,11 +65,11 @@ const timelineItems = [
   },
   {
     year: "2027",
-    text: "Proyectamos nuevas soluciones inteligentes, escalables y seguras para acompañar la evolución tecnológica de nuestros clientes.",
+    text: "Incorporaremos nuevas soluciones inteligentes, escalables y seguras para acompañar la evolución tecnológica de nuestros clientes y la consolidacion de empresa a nivel nacional.",
   },
   {
     year: "2028",
-    text: "Continuamos avanzando hacia una etapa de mayor innovación, integrando tecnología, experiencia y compromiso en cada proyecto desarrollado.",
+    text: "Continuaremos  avanzando hacia una etapa de mayor innovación, integrando tecnología, experiencia y compromiso en cada proyecto desarrollado para consolidarnos como empresa lider del mercado a nivel nacional e internacional..",
   },
 ];
  

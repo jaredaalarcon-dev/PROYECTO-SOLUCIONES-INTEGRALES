@@ -98,7 +98,7 @@ const Convenios = () => {
     const strategicServices: Service[] = [
     { label: "Convenio", title: "INSTITUTO NACIONAL SENATI", image: "https://i.postimg.cc/4y8MFCw0/Inauguracion-Ilo-03-scaled-1-1536x1024.jpg", imageAlt: "Herramientas de desarrollo de software", cta: "INFORMACIÓN" },
     { label: "Convenio", title: "I.E.S.P. HUANDO", image: "https://cdn.www.gob.pe/uploads/document/file/5115620/376237836_764535409042613_3847121157515574135_n.jpg", imageAlt: "Facturación electrónica", cta: "INFORMACIÓN" },
-    { label: "Convenio", title: "INSTITUTO SUPERIOR CHANCAY", image: "https://elperuano.pe/fotografia/thumbnail/2024/07/30/000305023M.jpg", imageAlt: "Soporte en sitio", cta: "INFORMACIÓN" },
+    { label: "Convenio", title: "INSTITUTO SUPERIOR CHANCAY", image: "https://i.postimg.cc/43dZSP4Z/dd35.jpg", imageAlt: "Soporte en sitio", cta: "INFORMACIÓN" },
     { label: "Convenio", title: "UNIVERSIDAD NACIONAL JOSÉ FAUSTINO SÁNCHEZ", image: "https://unjfsc.edu.pe/wp-content/uploads/2020/04/NUESTRA-HISTORIA2.jpg", imageAlt: "Tecnología y seguridad", cta: "INFORMACIÓN" }
   ];
 
@@ -238,7 +238,7 @@ const Convenios = () => {
       {/* Banner principal */}
       <div className="relative w-screen h-screen bg-gray-900 overflow-hidden">
   <img
-    src="https://i.postimg.cc/66S2jc4X/IMG-20260603-WA0013.jpg"
+    src="https://i.postimg.cc/qMXKGJZR/dd34.jpg"
     alt="Fondo de la historia"
     className="absolute inset-0 w-full h-full object-cover"
   />

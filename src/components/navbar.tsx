@@ -6,7 +6,7 @@ import {
   FaUsers, FaHistory, FaHandshake, FaPeopleCarry, FaLaptopCode, FaBuilding,
   FaChalkboardTeacher, FaClipboardCheck, FaShieldAlt, FaSitemap, FaUserTie,
   FaCode, FaFileInvoiceDollar, FaLock, FaNetworkWired, FaServer, FaTools,
-  FaSearch, FaPaintBrush, FaGift, FaShareAlt, FaBolt, FaSnowflake, FaPlug,FaWhatsapp,
+  FaSearch, FaPaintBrush, FaGift, FaShareAlt, FaBolt, FaSnowflake, FaPlug, FaWhatsapp,
   FaHeadset,
 } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -23,6 +23,7 @@ const navBarStyle: React.CSSProperties = {
   backdropFilter: "blur(16px) saturate(180%)",
   WebkitBackdropFilter: "blur(16px) saturate(180%)",
   padding: "0 24px",
+  width: "100%",
   height: "64px",
   display: "flex",
   alignItems: "center",
@@ -264,15 +265,26 @@ function Navbar() {
 
         @media (min-width: 768px) {
           .navbar-bg-band {
-            display: block;
+            display: none;
           }
+
           .navbar-main {
-            border-radius: 16px !important;
-            margin: 0 24px !important;
-            margin-top: -74px !important;
-            padding: 0 32px !important;
-            border: 1px solid rgba(255,255,255,0.08) !important;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.25), 0 1px 3px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.06) !important;
+            width: 100% !important;
+            margin: 0 !important;
+            border-radius: 0 !important;
+            padding: 0 48px !important;
+            border: none !important;
+            border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+            box-shadow: 0 2px 18px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.04) !important;
+          }
+        }
+
+        @media (min-width: 1280px) {
+          .navbar-main {
+            /* Mantiene el mismo espacio visual a ambos lados:
+               logo separado de la izquierda y redes más hacia el centro. */
+            padding-left: clamp(250px, 15.3vw, 300px) !important;
+            padding-right: clamp(250px, 15.3vw, 300px) !important;
           }
         }
       `}</style>
@@ -463,6 +475,24 @@ function Navbar() {
             </div>
           </li>
 
+          {/* ── PRODUCTOS ── */}
+          <li style={{ whiteSpace: "nowrap" }}>
+            <a
+              href="https://solucionesintegralesjb.com/productos/"
+              style={menuLinkBase}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "#38bdf8";
+                e.currentTarget.style.borderBottom = "2px solid #38bdf8";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "#cbd5e1";
+                e.currentTarget.style.borderBottom = "2px solid transparent";
+              }}
+            >
+              PRODUCTOS
+            </a>
+          </li>
+
           <li style={{ whiteSpace: "nowrap" }}>
             <Link
               to="/contacto"
@@ -484,7 +514,7 @@ function Navbar() {
         {/* Redes sociales Desktop */}
         <div
           className="hidden md:flex"
-          style={{ gap: "8px", flexShrink: 0, marginLeft: "16px" }}
+          style={{ gap: "8px", flexShrink: 0, marginLeft: "auto" }}
         >
           {[
             { icon: FaFacebookF, url: "https://www.facebook.com/solucionesintegralesJB/", color: "#1877F2" },
@@ -710,6 +740,26 @@ function Navbar() {
                     </div>
                   )}
                 </li>
+
+                {/* ── PRODUCTOS MÓVIL ── */}
+                <li>
+                  <a
+                    href="https://solucionesintegralesjb.com/productos/"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{
+                      display: "block",
+                      padding: "12px 16px",
+                      borderRadius: "10px",
+                      fontWeight: 600,
+                      color: "#1e293b",
+                      textDecoration: "none",
+                      fontSize: "15px",
+                    }}
+                  >
+                    PRODUCTOS
+                  </a>
+                </li>
+
                 <li>
                   <Link
                     to="/contacto"

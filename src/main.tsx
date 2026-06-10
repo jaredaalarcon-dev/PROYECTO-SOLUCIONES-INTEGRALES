@@ -1,6 +1,12 @@
+
+
+
+
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 import "bootstrap/dist/css/bootstrap.min.css"; // IMPORTAR BOOTSTRAP SOLO AQUÍ
 import './index.css';
@@ -57,6 +63,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
 
     <BrowserRouter>
+     <ScrollToTop />
 
       <Routes>
 
