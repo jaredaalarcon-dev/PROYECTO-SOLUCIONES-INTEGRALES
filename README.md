@@ -505,6 +505,9 @@ https://github.com/jaredaalarcon-dev
 🔗 LinkedIn:
 https://www.linkedin.com/in/jared-alonso-arroyo-alarcon-b95993399/
 
+🔗 Pagina Web:
+https://solucionesintegralesjb.com/
+
 ---
 
 <p align="center">
