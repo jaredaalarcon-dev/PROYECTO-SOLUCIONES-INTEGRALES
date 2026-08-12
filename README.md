@@ -515,22 +515,5 @@ https://solucionesintegralesjb.com/
 </p>
 ```
 
-### Una mejora importante que hice respecto al README anterior
-
-No inventé tecnologías ni funcionalidades que no aparecen en el proyecto. Por ejemplo, el `package.json` confirma React 19, TypeScript 5.8, Vite 7, React Router, Three.js, GSAP, Framer Motion, etc.
-
-Y el backend confirma **Express, MySQL2, CORS, dotenv y Axios**, mientras que el código confirma la integración directa con Ollama y el endpoint `/api/chat`.
-
-### 🚨 Pero antes de hacer commit
-
-**No quiero que simplemente pegues esto y ya.** Hay una cosa que debemos solucionar primero:
-
-> `backend/.env`
-
-El repositorio público muestra ese archivo en el árbol del backend.
-
-Si ese `.env` contiene **credenciales reales de MySQL, tokens o cualquier secreto**, hay que sacarlo del repositorio y, si alguna credencial real llegó a estar publicada, **cambiarla/rotarla**.
-
-Después de eso sí hacemos el commit del README.
 
 Y una vez que terminemos con la seguridad, el siguiente paso que te recomiendo es **poner capturas reales de tu aplicación dentro del README**. Eso hará que este repositorio pase de verse como documentación técnica a verse como un **proyecto de portfolio profesional**.
