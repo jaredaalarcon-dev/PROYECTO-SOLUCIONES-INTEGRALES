@@ -1,5 +1,6 @@
 # 🌐 Soluciones Integrales JB
 
+
 <p align="center">
   <strong>Plataforma web corporativa Full Stack con integración de Inteligencia Artificial</strong>
 </p>
