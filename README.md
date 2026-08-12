@@ -511,10 +511,3 @@ https://solucionesintegralesjb.com/
 
 ---
 
-<p align="center">
-  <strong>Construyendo soluciones de software modernas con tecnología e Inteligencia Artificial.</strong>
-</p>
-```
-
-
-Y una vez que terminemos con la seguridad, el siguiente paso que te recomiendo es **poner capturas reales de tu aplicación dentro del README**. Eso hará que este repositorio pase de verse como documentación técnica a verse como un **proyecto de portfolio profesional**.
